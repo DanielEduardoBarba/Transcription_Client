@@ -52,10 +52,10 @@ export default function App(){
 
   const speak = (txt) => {
     const utterance = new SpeechSynthesisUtterance(txt)
-    // utterance.lang = 'en-US' // Set language
-    // utterance.pitch = 1.5 // Set pitch (0 to 2)
-    // utterance.rate = 1 // Set rate (0.1 to 10)
-    // utterance.volume = 1 // Set volume (0 to 1)
+    utterance.lang = 'en-US' // Set language
+    utterance.pitch = 1. // Set pitch (0 to 2)
+    utterance.rate = 1 // Set rate (0.1 to 10)
+    utterance.volume = 1 // Set volume (0 to 1)
     window.speechSynthesis.speak(utterance)
   }
 
